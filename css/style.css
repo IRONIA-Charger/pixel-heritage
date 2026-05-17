@@ -1,0 +1,205 @@
+:root {
+    --cor-principal: #ff0000; /* Padrão de fallback */
+    --cor-secundaria: #ffffff;
+    --cor-fundo: #121212;
+    --cor-texto: #cccccc;
+    --transition-speed: 0.4s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    font-family: 'Press Start 2P', cursive;
+    color: var(--cor-principal);
+}
+
+.logo-img {
+    height: 85px; /* Ajuste o tamanho conforme sua logo */
+    width: auto;
+    display: block;
+    image-rendering: pixelated; 
+}
+.logo-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    font-family: Arial, sans-serif; /* Fallback se a font retrô não carregar */
+    transition: background-color var(--transition-speed) ease, 
+                color var(--transition-speed) ease;
+    margin: 0;
+}
+
+/* Transições suaves para os elementos dinâmicos */
+header, footer, .console-button, .produto-card, .produto-imagem {
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.minhalista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dá um contraste pro menu no topo */
+}
+
+.minhalista a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.minhalista a:hover,
+.minhalista a:focus {
+    color: var(--cor-principal);
+}
+
+#consolesDestaque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-console {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.console-button {
+    background-color: #1a1a1a;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 8px;
+}
+.btn{
+    background-color: #1a1a1a;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 8px;
+}
+
+.console-button:hover {
+    background: var(--cor-principal);
+    color: #fff; /* Garante leitura se a cor principal for clara */
+    box-shadow: 0 0 15px var(--cor-principal);
+    transform: translateY(-4px);
+}
+
+.container-grid {
+    display: grid;
+    /* Essa é a magia! auto-fit faz pular de linha sozinho */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza a vitrine na tela */
+}
+
+.produto-card {
+    background: #1e1e1e;
+    border: 2px solid var(--cor-principal);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px var(--cor-principal);
+    transform: translateY(-8px);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: 200px; /* Altura fixa para não desalinhar o grid */
+    object-fit: cover; 
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.produto-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    flex-grow: 1; /* Empurra o resto pro final */
+}
+
+/* Container da Busca */
+.busca-box {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro sutil */
+    border: 2px solid var(--cor-principal);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.search-field {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-field input {
+    padding: 12px;
+    border: 1px solid var(--cor-principal);
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    width: 60%;
+}
+
+.btn-retro {
+    padding: 10px 20px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+}
+
+.btn-retro:hover {
+    filter: brightness(1.2);
+}
+
+/* Estilo do Card de Resultado */
+#resultadoBusca {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-resultado {
+    background: #222;
+    padding: 20px;
+    border-left: 5px solid var(--cor-principal);
+    line-height: 1.8;
+    max-width: 500px;
+    width: 100%;
+}

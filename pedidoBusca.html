@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo-pixel.jpg" alt="Logo PixelHeritage" class="logo-img">
+                <span>PixelHeritage</span>
+            </div>
+            <ul class="minhalista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Consoles</a></li>
+                <li><a href="institucional.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pedidoBusca.html">Busca Especial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+    <section class="busca-box">
+        <h2>Central de Rastreamento</h2>
+        <p>Insira o código do seu pedido para verificar o status.</p>
+        
+        <div class="search-field">
+            <input type="text" id="inputPedido" placeholder="Ex: PX-2026-99">
+            <button id="btnBuscar" class="btn-retro">Rastrear Loot</button>
+        </div>
+    </section>
+
+    <section id="resultadoBusca" class="container-grid"></section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/busca.js"></script>
+
+</body>
+</html>

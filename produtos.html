@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title> Nossos Produtos </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PixelHeritage</div>
+            <ul class="minhalista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Consoles</a></li>
+                <li><a href="institucional.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pedidoBusca.html">Busca Especial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <section id="header-dinamico" class="container">
+        <img id="logoTema" src="" alt="" style="max-height: 80px;">
+        <h2 id="tituloTema">Selecione uma plataforma</h2>
+        <p id="anoFundacao" style="font-weight: bold;"></p>
+        <p id="descricaoTema"></p>
+        
+        <div id="consolesDestaque" class="menu-filtros"></div>
+    </section>
+
+    <section class="container">
+        <div id="historiaTema" class="texto-historia"></div>
+    </section>
+
+    <hr>
+
+    <section id="lista-produtos" class="container-grid">
+        <p>Aguardando seleção de hardware...</p>
+    </section>
+
+    </section>
+
+    <hr style="border-color: var(--cor-principal); margin: 40px 0;">
+    <section class="container" style="text-align: center; margin-bottom: 40px; padding: 20px; background: rgba(0,0,0,0.4); border-radius: 8px;">
+        <h2>♻️ Sistema de Trade-in</h2>
+        <p>Quer vender seu console antigo? A PixelHeritage compra!</p>
+        <form id="formVenda" onsubmit="event.preventDefault(); alert('Proposta enviada para nossa equipe de avaliação! Entraremos em contato.'); this.reset();">
+            <input type="text" placeholder="Qual console você quer vender?" required style="padding: 10px; width: 60%; max-width: 300px; margin-bottom: 10px;">
+            <button type="submit" class="btn-retro">Enviar Proposta</button>
+        </form>
+    </section>
+</main>
+
+    <script src="js/config.js"></script> 
+    <script src="js/apiConsoles.js"></script>
+    <script src="js/apiRawg.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

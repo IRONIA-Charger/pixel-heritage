@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelHeritage | Consoles Retrô</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo-pixel.jpg" alt="Logo PixelHeritage" class="logo-img">
+                <span>PixelHeritage</span>
+            </div>
+            <ul class="minhalista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Consoles</a></li>
+                <li><a href="institucional.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="pedidoBusca.html">Busca Especial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo à PixelHeritage</h1>
+            <p>Reviva a nostalgia dos consoles retrô com nossa coleção exclusiva!</p>
+            <a href="produtos.html" class="btn">Explore Agora</a>
+        </section>
+        
+        <!-- SEÇÃO DE DESTAQUES DOS CONSOLES -->
+        <section class="destaques" id="api-data">
+            <h2>Nossas Plataformas Retrô</h2>
+            <div class="consoles-destaque" id="consolesDestaque">
+                <!-- Cards dos consoles vão aparecer aqui via JS -->
+            </div>
+        </section>
+
+        <!-- VITRINE RETRO - CONECTADA AO TEMA SELECIONADO -->
+        <section class="vitrine-retro" id="vitrinePrincipal">
+            <div class="vitrine-header">
+                <img  id="logoTema" alt="Logo do Console" class="logo-console">
+                <div class="vitrine-info">
+                    <h2 id="tituloTema">Selecione um console</h2>
+                    <p id="descricaoTema">Escolha um dos nossos consoles para ver os jogos disponíveis</p>
+                    <small id="anoFundacao" class="ano-console"></small>
+                </div>
+            </div>
+            
+            <div id="lista-produtos" class="container-grid">
+                <!-- Os produtos vão aparecer aqui via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PixelHeritage. Todos os direitos reservados.</p>
+        <p style="font-size: 0.7rem; opacity: 0.7;">
+            Logo por <a href="https://www.freepik.com/author/catalyststuff" target="_blank" style="color: inherit; text-decoration: underline;">catalyststuff - Freepik</a>
+        </p>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/apiRawg.js"></script>
+    <script src="js/apiConsoles.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
