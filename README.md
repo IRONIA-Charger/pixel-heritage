@@ -9,4 +9,4 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web (iCEV), focado em 
 - **Dados**: Integração via Fetch API com a **RAWG Video Games Database**.
 
 ## 🔗 Acesso ao Projeto
-- **Site Online**: [COLE O LINK DO GITHUB PAGES AQUI]
+- **Site Online**:  https://ironia-charger.github.io/pixel-heritage/
