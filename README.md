@@ -1,7 +1,7 @@
 # pixel-heritage
 
 
-Projeto desenvolvido para a disciplina de Desenvolvimento Web (iCEV), focado em uma vitrine interativa e funcional de consoles e jogos clássicos.
+Projeto desenvolvido para a disciplina de Programação Web, focado em uma vitrine interativa e funcional de consoles e jogos clássicos.
 
 ## Tecnologias e Arquitetura
 - **Frontend**: HTML5 Semântico e CSS3 (Custom Properties & Grid/Flexbox).
